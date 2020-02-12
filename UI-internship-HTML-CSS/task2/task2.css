@@ -1,0 +1,33 @@
+input {
+    margin: 10px;
+}
+
+button {
+    color: white;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red,
+.green,
+.blue {
+    display: none;
+}
+
+#show-red:checked~.red,
+#show-green:checked~.green,
+#show-blue:checked~.blue {
+    display: inline;
+}
